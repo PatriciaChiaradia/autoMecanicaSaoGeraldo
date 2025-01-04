@@ -1,47 +1,45 @@
 
 package com.senac.autoMecanicaSaoGeraldo.service;
 
+import com.senac.autoMecanicaSaoGeraldo.data.ClienteRepository;
 import com.senac.autoMecanicaSaoGeraldo.model.Cliente;
 import org.springframework.stereotype.Service;
-import java.util.ArrayList;
 import java.util.List;
+import org.springframework.beans.factory.annotation.Autowired;
 
 @Service
 public class ClienteService {
-
-    private final List<Cliente> listaClientes = new ArrayList<>();
     
+    @Autowired
+    ClienteRepository clienteRepository;
      
-    public void adicionarCliente(Cliente cliente) {
-        cliente.setId(listaClientes.size() + 1);
-        listaClientes.add(cliente);
+    public Cliente adicionarCliente(Cliente cliente) {
+        cliente.setId(null);
+        clienteRepository.save(cliente);
+        return cliente;
     }
 
     public List<Cliente> listarClientes() {
-        return listaClientes;
+        return clienteRepository.findAll();
     }
 
-    public Cliente buscarClientePorId(int id) {
-        return listaClientes.stream()
-                .filter(c -> c.getId() == id)
-                .findFirst()
-                .orElse(null);
+    public Cliente buscarClientePorId(Integer id) {
+        return clienteRepository.findById(id).orElseThrow();
     }
 
-    public void atualizarCliente(Cliente clienteAtualizado) {
-        for (Cliente cliente : listaClientes) {
-            if (cliente.getId() == clienteAtualizado.getId()) {
-                cliente.setNome(clienteAtualizado.getNome());
-                cliente.setCpf(clienteAtualizado.getCpf());
-                cliente.setTelefone(clienteAtualizado.getTelefone());
-                cliente.setModelo(clienteAtualizado.getModelo());
-                cliente.setPlaca(clienteAtualizado.getPlaca());
-                break;
-            }
-        }
+    public Cliente atualizarCliente(Integer id, Cliente cliente) {
+        Cliente clienteEncontrado = buscarClientePorId(id);
+        clienteEncontrado.setNome(cliente.getNome());
+        clienteEncontrado.setCpf(cliente.getCpf());
+        clienteEncontrado.setTelefone(cliente.getTelefone());
+        clienteEncontrado.setModelo(cliente.getModelo());
+        clienteEncontrado.setPlaca(cliente.getPlaca());
+        clienteRepository.save(clienteEncontrado);
+        return clienteEncontrado;
     }
 
-    public void excluirCliente(int id) {
-        listaClientes.removeIf(cliente -> cliente.getId() == id);
+    public void excluirCliente(Integer id) {
+        Cliente clienteEncontrado = buscarClientePorId(id);
+        clienteRepository.deleteById(clienteEncontrado.getId());
     }
 }

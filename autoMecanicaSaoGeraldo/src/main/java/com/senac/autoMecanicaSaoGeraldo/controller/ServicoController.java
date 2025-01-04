@@ -48,7 +48,7 @@ public class ServicoController {
             return "ordem-servico";
         }
         
-        if (servico.getClienteId() == null) {
+        if (servico.getCliente() == null) {
             result.rejectValue("clienteId", "field.required", "O cliente é obrigatório");
             model.addAttribute("listaServico", servicoService.listarServicos());
             return "ordem-servico";
@@ -68,12 +68,12 @@ public class ServicoController {
         }
         return "redirect:/ordem-servico";
     }
-
+/*
     @PostMapping("/atualizar-servico")
     public String processarAtualizacaoServico(@ModelAttribute Servico servicoAtualizado, Model model) {
         servicoService.atualizarServico(servicoAtualizado);
         return "redirect:/ordem-servico";
-    }
+    }*/
 
     @GetMapping("/excluir-servico")
     public String excluirServico(@RequestParam("id") int id) {

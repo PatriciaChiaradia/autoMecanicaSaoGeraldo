@@ -1,6 +1,11 @@
 
 package com.senac.autoMecanicaSaoGeraldo.model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import jakarta.validation.constraints.DecimalMin;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
@@ -8,9 +13,13 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import org.springframework.format.annotation.DateTimeFormat;
 
+@Entity
+@Table(name="caixa")
 public class Caixa {
 
     //Atributos:
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer idCaixa;
     
     @NotBlank(message = "Descrição é obrigatória.")
@@ -101,6 +110,10 @@ public class Caixa {
     public String getDataFormatada() {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy"); 
         return data != null ? data.format(formatter) : ""; 
+    }
+    public enum TipoLancamento {
+        ENTRADA,
+        SAIDA
     }
 }
 

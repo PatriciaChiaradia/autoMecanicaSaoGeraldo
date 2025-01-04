@@ -1,5 +1,12 @@
 package com.senac.autoMecanicaSaoGeraldo.model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.Table;
 import jakarta.validation.constraints.DecimalMin;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
@@ -7,16 +14,22 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import org.springframework.format.annotation.DateTimeFormat;
 
+@Entity
+@Table(name="servico")
 public class Servico {
     
     //Atributos:
-    private int id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Integer id;
     
     @NotNull(message = "Descrição é obrigatória") 
     @Size(min = 1, max = 100, message = "Descrição deve ter entre 1 e 100 caracteres")
     private String descricao;
     
-    private Cliente clienteId;
+    @ManyToOne 
+    @JoinColumn(name = "cliente_id") 
+    private Cliente cliente;
     
     @NotNull(message = "Valor é obrigatório.")
     @DecimalMin(value = "0.01", message = "O valor deve ser maior que zero.")
@@ -32,10 +45,10 @@ public class Servico {
     public Servico() {
     }
 
-    public Servico(int id, String descricao, Cliente clienteId, Double valor, Boolean Realizada, LocalDate data) {
+    public Servico(Integer id, String descricao, Cliente cliente, Double valor, Boolean Realizada, LocalDate data) {
         this.id = id;
         this.descricao = descricao;
-        this.clienteId = clienteId;
+        this.cliente = cliente;
         this.valor = valor;
         this.Realizada = Realizada;
         this.data = data;
@@ -46,7 +59,7 @@ public class Servico {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -58,12 +71,12 @@ public class Servico {
         this.descricao = descricao;
     }
 
-    public Cliente getClienteId() {
-        return clienteId;
+    public Cliente getCliente() {
+        return cliente;
     }
 
-    public void setClienteId(Cliente clienteId) {
-        this.clienteId = clienteId;
+    public void setCliente(Cliente clienteId) {
+        this.cliente = clienteId;
     }
 
     public Boolean getRealizada() {

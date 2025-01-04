@@ -1,44 +1,46 @@
 package com.senac.autoMecanicaSaoGeraldo.service;
 
+import com.senac.autoMecanicaSaoGeraldo.data.ServicoRepository;
 import com.senac.autoMecanicaSaoGeraldo.model.Servico;
 import org.springframework.stereotype.Service;
-import java.util.ArrayList;
 import java.util.List;
+import org.springframework.beans.factory.annotation.Autowired;
 
 @Service
 public class ServicoService {
 
-    private final List<Servico> listaServico = new ArrayList<>();
+    @Autowired
+    ServicoRepository servicoRepository;
+   
 
-    public void adicionarServico(Servico servico) {
-    servico.setId(listaServico.size() + 1);
-    listaServico.add(servico);
+    public Servico adicionarServico(Servico servico) {
+        servico.setId(null);
+        servicoRepository.save(servico);
+        return servico;
 }
 
     public List<Servico> listarServicos() {
-        return listaServico;
+        return servicoRepository.findAll();
     }
 
-    public Servico buscarServicoPorId(int id) {
-        Servico servico = listaServico.stream().filter(s -> s.getId() == id).findFirst().orElse(null);
-    return servico;
+    public Servico buscarServicoPorId(Integer id) {
+       return servicoRepository.findById(id).orElseThrow();
     }
 
-    public void atualizarServico(Servico servicoAtualizado) { 
-        for (Servico servico : listaServico) {
-            if (servico.getId() == servicoAtualizado.getId()) { 
-                servico.setData(servicoAtualizado.getData());
-                servico.setDescricao(servicoAtualizado.getDescricao()); 
-                servico.setValor(servicoAtualizado.getValor());
-                servico.setClienteId(servicoAtualizado.getClienteId());
-                servico.setRealizada(servicoAtualizado.getRealizada()); 
-                break; 
-            }
-        }
+    public Servico atualizarServico(Integer id,Servico servico) { 
+      Servico servicoEncontrado = buscarServicoPorId(id);
+        servicoEncontrado.setData(servico.getData());
+        servicoEncontrado.setDescricao(servico.getDescricao()); 
+        servicoEncontrado.setValor(servico.getValor());
+        servicoEncontrado.setCliente(servico.getCliente());
+        servicoEncontrado.setRealizada(servico.getRealizada()); 
+        servicoRepository.save(servicoEncontrado);
+        return servicoEncontrado;
     }
     
-    public void excluirServico(int id) {
-        listaServico.removeIf(servico -> servico.getId() == id);
+    public void excluirServico(Integer id) {
+    Servico servicoEncontrado = buscarServicoPorId(id);
+        servicoRepository.deleteById(servicoEncontrado.getId());
     }
 }
 

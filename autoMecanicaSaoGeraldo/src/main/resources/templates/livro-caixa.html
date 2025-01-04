@@ -37,8 +37,8 @@
             
             <label for="tipo">Tipo:</label>
             <select th:field="*{tipoLancamento}">
-                <option value="entrada" th:text="'Entrada'" th:selected="${caixa.tipoLancamento == 'entrada'}"></option>
-                <option value="saida" th:text="'Saída'" th:selected="${caixa.tipoLancamento == 'saida'}"></option>
+                <option value="ENTRADA" th:text="'Entrada'" th:selected="${caixa.tipoLancamento == 'entrada'}"></option>
+                <option value="SAIDA" th:text="'Saída'" th:selected="${caixa.tipoLancamento == 'saida'}"></option>
             </select>
 
             <p><input type="submit" class="btn btn-secondary" value="Registrar"></p>          
@@ -58,21 +58,16 @@
                     <th>Tipo</th>
                     <th>Total</th>
                 </tr>
-                
-                <tr>
+                <tbody>    
                     <tr th:each="registro : ${listaRegistro}">
                         <td th:text="${registro.dataFormatada}"></td>
                         <td th:text="${registro.descricao}"></td>
                         <td th:text="${#numbers.formatDecimal(registro.valor, 1, 'POINT', 2, 'COMMA')}"></td>
-                        <td th:text="${registro.tipoLancamento == 'entrada' ? 'Entrada' : 'Saída'}"></td>
+                        <td th:text="${registro.tipoLancamento == 'ENTRADA' ? 'Entrada' : 'Saída'}"></td>
                         <td th:text="${#numbers.formatDecimal(registro.saldoTotal, 1, 'POINT', 2, 'COMMA')}"></td>
                     </tr>
-                </tr>
+                </tbody> 
             </thead>
-            <tbody>
-                <!-- Registros serão adicionados aqui -->
-            </tbody>
-            
         </table>
         <!-- Scripts -->
         <script th:src="@{/js/script.js}"></script>

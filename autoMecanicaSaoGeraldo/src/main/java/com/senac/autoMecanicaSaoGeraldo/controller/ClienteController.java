@@ -60,12 +60,12 @@ public class ClienteController {
         }
         return "redirect:/exibir";
     }
-
+/*
     @PostMapping("/atualizar")
-    public String processarAtualizacao(@ModelAttribute Cliente clienteAtualizado) {
-        clienteService.atualizarCliente(clienteAtualizado);
+    public String processarAtualizacao(@ModelAttribute Cliente cliente) {
+        clienteService.atualizarCliente(cliente);
         return "redirect:/exibir";
-    }
+    }*/
 
     @GetMapping("/excluir-cliente")
     public String excluirCliente(@RequestParam("id") int id) {
