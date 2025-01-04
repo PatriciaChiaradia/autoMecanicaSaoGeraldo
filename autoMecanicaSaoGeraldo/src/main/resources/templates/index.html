@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Auto Mecânica São Geraldo</title>
+        <link rel="stylesheet" th:href="@{/css/style.css}"/>
+    </head>
+
+    <body>
+        <!--Cabeçalho-->
+        <header>
+            <img th:src="@{/images/Logo.png}" alt="Logo Auto mecanica" width="200" height="200" />
+            <h1>Auto Mecânica São Geraldo</h1>
+        </header>
+        
+        <!--Imagem -->
+        <img th:src="@{/images/Oficina.jpg}"alt="Foto Oficina" />
+        
+        <!-- Título -->
+        <h2>Bem-vindo ao Sistema da Auto Mecânica São Geraldo</h2>
+            
+        <!-- Links de Navegação -->
+            <nav>
+                <a th:href="@{/cadastro}" class="menu-button">Cadastro</a>
+                <a th:href="@{/exibir}" class="menu-button">Exibir Cadastros</a>
+                <a th:href="@{/livro-caixa}" class="menu-button">Registro Financeiro</a>
+                <a th:href="@{/ordem-servico}" class="menu-button">Ordem de Serviços</a>
+            </nav>
+    </body>
+</html>

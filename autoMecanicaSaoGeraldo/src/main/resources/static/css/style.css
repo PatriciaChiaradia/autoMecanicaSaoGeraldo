@@ -1,0 +1,223 @@
+
+/* Ajuste no cabeçalho */
+header {
+    display: flex; /* Define o cabeçalho como um contêiner flexível */
+    justify-content:space-around;/* Espaça os itens de maneira a deixar a logo à esquerda e o título à direita */
+    align-items: center; /* Alinha verticalmente os itens no centro */
+    background-color: #91a7be;
+    padding: 10px 20px;
+}
+
+header img {
+    max-width: 70%; /* Adapta o tamanho da imagem ao container */
+    height: auto;
+
+}
+
+img {
+    display: block;
+    max-width: 100%; /* Impede que imagens extrapolem o contêiner */
+    height: auto;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    color: #002a50;
+    text-align: center;
+    margin: 0;
+    padding-left: 20px;
+}
+
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    color: #002a50;
+    text-align: center; /* Centraliza o texto */
+}
+
+h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    color: #002a50;
+    text-align: initial;
+}
+
+/* Fundo */
+body {
+    background-color: #bfc9d3;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* Links de Navegação */ 
+nav { 
+    display: flex; /* Define o contêiner como flex */
+      justify-content: center; /* Centraliza os itens horizontalmente */ 
+      align-items: center; /* Alinha os itens verticalmente */ 
+      gap: 20px; /* Espaço entre os botões */ 
+      flex-wrap: wrap; /* Permite que os botões quebrem para a próxima linha se necessário */ 
+      width: 100%
+} 
+/* Botões do menu */ 
+.menu-button { 
+    display: inline-block; 
+    width: 200px; 
+    height: 70px;
+    text-align: center; 
+    line-height: 70px; /* Centraliza o texto verticalmente */ 
+    background-color: #145da0; 
+    color: white; 
+    text-decoration: none;
+    border-radius: 10px; /* Mantém os cantos arredondados */ 
+    margin: 10px; /* Espaçamento ao redor dos botões */ 
+    font-size: 18px; /* Aumenta o tamanho da fonte */ 
+    font-weight: bold; 
+    transition: all 0.3s ease; 
+} 
+.menu-button:hover { 
+    background-color: #002a50; 
+    transform: scale(1.05);
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;  /* Reduziu o padding */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 600px; /* Definindo a largura do formulário */
+    margin-left: auto; /* Centralizando */
+    margin-right: auto; /* Centralizando */
+}
+
+form div {
+    margin-bottom: 10px;
+}
+
+label {
+    font-weight: bold;
+    
+}
+
+input[type="text"],
+input[type="number"] {
+    padding: 8px;
+    width: 100%;  /* Ocupa 100% da largura disponível */
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #145da0;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #002a50;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+    background-color: #fff;
+}
+
+th {
+    background-color: #145da0;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header img {
+        width: 80%; /* Ajuste da largura da imagem para telas menores */
+    }
+
+    h1 {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    form {
+        width: 90%; /* Formulário ocupa 90% da tela em dispositivos menores */
+    }
+}
+.btn-secondary{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #145da0; /*azul*/
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-sencondary:hover {
+    background-color: #002a50; /*azul escuro*/
+}
+
+.btn-danger{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #FF0000; /*vermelho*/
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin: 7px;
+}
+
+.btn-danger:hover{
+    background-color: #8B0000; /*vermelho escuro*/
+}
+
+.btn-success{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #008000; /*verde*/
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin: 7px;
+}
+
+.btn-success:hover{
+    background-color: #006400; /*verde escuro*/
+}
+
+
+

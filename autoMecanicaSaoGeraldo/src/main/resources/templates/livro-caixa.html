@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Registro Financeiro</title>
+        <link rel="stylesheet" th:href="@{/css/style.css}"/>
+    </head>
+    
+    <body>
+        <header>
+            <img th:src="@{/images/Logo.png}"alt="Logo Auto mecanica" width="200" height="200"/>
+            <h1>Auto Mecânica São Geraldo</h1>
+        </header>
+        
+        <!-- Link para voltar -->
+        <a th:href="@{/inicio}" class="btn btn-secondary">Voltar</a>
+        
+        <!-- Título -->
+        <h2>Registro Financeiro</h2>
+        
+        <!-- Formulário -->
+        <form name="formCadastroCaixa" th:action="@{/registrar}" method="post" th:object="${caixa}" onsubmit="return validarFormularioCaixa();">
+            <label for="data">Data:</label> 
+            <input type="text" th:field="*{data}" id="data"  placeholder="DD/MM/YYYY" >
+            <br />   
+            
+            <label for="descricao">Descrição:</label>
+            <input type="text" th:field="*{descricao}" id="descricao" >
+            <br />
+            
+            <label for="valor">Valor:</label>
+            <input type="number" th:field="*{valor}" id="valor" >
+            <span th:if="${#fields.hasErrors('valor')}" th:errors="*{valor}"></span>
+            <br />
+            
+            <label for="tipo">Tipo:</label>
+            <select th:field="*{tipoLancamento}">
+                <option value="entrada" th:text="'Entrada'" th:selected="${caixa.tipoLancamento == 'entrada'}"></option>
+                <option value="saida" th:text="'Saída'" th:selected="${caixa.tipoLancamento == 'saida'}"></option>
+            </select>
+
+            <p><input type="submit" class="btn btn-secondary" value="Registrar"></p>          
+        </form>
+        
+        <!-- Tabela de Registros -->
+        <table id="historico" border="1">
+            <thead>
+                <tr>
+                    <th colspan="6">Histórico de Registros</th>
+                </tr>
+                
+                <tr>
+                    <th>Data</th>
+                    <th>Descrição</th>
+                    <th>Valor</th>
+                    <th>Tipo</th>
+                    <th>Total</th>
+                </tr>
+                
+                <tr>
+                    <tr th:each="registro : ${listaRegistro}">
+                        <td th:text="${registro.dataFormatada}"></td>
+                        <td th:text="${registro.descricao}"></td>
+                        <td th:text="${#numbers.formatDecimal(registro.valor, 1, 'POINT', 2, 'COMMA')}"></td>
+                        <td th:text="${registro.tipoLancamento == 'entrada' ? 'Entrada' : 'Saída'}"></td>
+                        <td th:text="${#numbers.formatDecimal(registro.saldoTotal, 1, 'POINT', 2, 'COMMA')}"></td>
+                    </tr>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Registros serão adicionados aqui -->
+            </tbody>
+            
+        </table>
+        <!-- Scripts -->
+        <script th:src="@{/js/script.js}"></script>
+    </body>
+</html>

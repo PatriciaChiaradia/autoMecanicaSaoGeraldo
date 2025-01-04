@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale"1.0/>
+        <title>Exibir</title>
+        <link rel="stylesheet" th:href="@{/css/style.css}"/>
+    </head>
+    
+    <body>
+        <header>
+            <img th:src="@{/images/Logo.png}"alt="Logo Auto mecanica" width="200" height="200"/>
+            <h1>Auto Mecânica São Geraldo</h1>
+        </header>
+        
+        <!-- Link para voltar -->
+        <a th:href="@{/inicio}" class="btn btn-secondary">Voltar</a>
+        
+        <!-- Título -->
+        <h2>Lista de Clientes</h2>
+        
+        <!-- Tabela de Clientes -->
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="7">Meus Clientes</th>
+                </tr>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>CPF</th>
+                    <th>Telefone</th>
+                    <th>Modelo</th>
+                    <th>Placa</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="clientesTable">
+                <tr th:each="cliente: ${lista}">
+                    <td th:text="${cliente.id}"></td>
+                    <td th:text="${cliente.nome}"></td>
+                    <td th:text="${cliente.cpf}"></td>
+                    <td th:text="${cliente.telefone}"></td>
+                    <td th:text="${cliente.modelo}"></td>
+                    <td th:text="${cliente.placa}"></td>
+                    <td>
+                        <a th:href="@{/atualizar(id=${cliente.id})}" class="btn btn-success">Editar</a>
+                        <a th:href="@{/excluir-cliente(id=${cliente.id})}"class="btn btn-danger">Excluir</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

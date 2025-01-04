@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale"/>
+        <title>Atualizar</title>
+        <link rel="stylesheet" th:href="@{/css/style.css}"/>
+    </head>
+
+    <body>
+        <header>
+            <img th:src="@{/images/Logo.png}"alt="Logo Auto mecanica" width="200" height="200"/>
+            <h1>Auto Mecânica São Geraldo</h1>
+        </header>
+        
+        <!-- Link para voltar -->
+        <a th:href="@{/inicio}" class="btn btn-secondary">Voltar</a>
+        
+        <!-- Título -->
+        <h2>Atualização de Cadastro de Cliente</h2>
+        
+        <!-- Formulário -->
+        <form th:action="@{/atualizar}" method="post" th:object="${cliente}">
+            <h3>Dados do Cliente</h3>
+            
+            <input type="hidden" th:field="*{id}"/>
+            
+            <label for="nome">Nome Completo:</label>
+            <input type="text" th:field="*{nome}"  required>
+            <br />
+            
+            <label for="cpf">CPF:</label>
+            <input type="text" th:field="*{cpf}" required>
+            <br />
+            
+            <label for="telefone">Telefone:</label>
+            <input type="text" th:field="*{telefone}" required>
+            <br />
+            
+            <h3>Dados do Veiculo</h3>
+            
+            <label for="modelo">Modelo:</label>
+            <input type="text" th:field="*{modelo}"  required>
+            <br />
+            
+            <label for="placa">Placa:</label>
+            <input type="text" th:field="*{placa}"  required>
+            <br />
+            
+            <p><input type="submit" class="btn btn-secondary" value="Atualizar"></p>
+        </form>
+    </body>
+</html>
