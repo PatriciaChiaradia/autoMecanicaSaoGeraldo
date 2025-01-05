@@ -53,19 +53,19 @@ public class ClienteController {
 
     @GetMapping("/atualizar")
     public String exibirFormularioAtualizar(@RequestParam("id") int id, Model model) {
-        Cliente cliente = clienteService.buscarClientePorId(id); // Busca cliente pelo ID
+        Cliente cliente = clienteService.buscarClientePorId(id); 
         if (cliente != null) {
             model.addAttribute("cliente", cliente);
             return "atualizar";
         }
         return "redirect:/exibir";
     }
-/*
+    
     @PostMapping("/atualizar")
     public String processarAtualizacao(@ModelAttribute Cliente cliente) {
-        clienteService.atualizarCliente(cliente);
+        clienteService.atualizarCliente(cliente.getId(), cliente);
         return "redirect:/exibir";
-    }*/
+    }
 
     @GetMapping("/excluir-cliente")
     public String excluirCliente(@RequestParam("id") int id) {

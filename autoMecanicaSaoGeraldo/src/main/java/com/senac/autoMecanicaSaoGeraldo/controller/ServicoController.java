@@ -68,12 +68,12 @@ public class ServicoController {
         }
         return "redirect:/ordem-servico";
     }
-/*
+
     @PostMapping("/atualizar-servico")
-    public String processarAtualizacaoServico(@ModelAttribute Servico servicoAtualizado, Model model) {
-        servicoService.atualizarServico(servicoAtualizado);
+    public String processarAtualizacaoServico(@ModelAttribute Servico servico, Model model) {
+        servicoService.atualizarServico(servico.getId(), servico);
         return "redirect:/ordem-servico";
-    }*/
+    }
 
     @GetMapping("/excluir-servico")
     public String excluirServico(@RequestParam("id") int id) {

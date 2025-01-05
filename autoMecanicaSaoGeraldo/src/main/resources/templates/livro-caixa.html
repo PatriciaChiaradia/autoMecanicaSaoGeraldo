@@ -31,10 +31,10 @@
             <br />
             
             <label for="valor">Valor:</label>
-            <input type="number" th:field="*{valor}" id="valor" >
+            <input type="text" th:field="*{valor}" id="valor" pattern="^\d+(\,\d{1,2})?$" title="Digite um valor válido. Valores válidos são números decimais com até duas casas decimais, por exemplo, 21,12.">
             <span th:if="${#fields.hasErrors('valor')}" th:errors="*{valor}"></span>
             <br />
-            
+
             <label for="tipo">Tipo:</label>
             <select th:field="*{tipoLancamento}">
                 <option value="ENTRADA" th:text="'Entrada'" th:selected="${caixa.tipoLancamento == 'entrada'}"></option>
@@ -64,7 +64,7 @@
                         <td th:text="${registro.descricao}"></td>
                         <td th:text="${#numbers.formatDecimal(registro.valor, 1, 'POINT', 2, 'COMMA')}"></td>
                         <td th:text="${registro.tipoLancamento == 'ENTRADA' ? 'Entrada' : 'Saída'}"></td>
-                        <td th:text="${#numbers.formatDecimal(registro.saldoTotal, 1, 'POINT', 2, 'COMMA')}"></td>
+                        <td th:text="${registro.saldoTotal}"></td>
                     </tr>
                 </tbody> 
             </thead>

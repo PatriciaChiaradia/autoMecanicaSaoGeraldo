@@ -6,7 +6,6 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
-import jakarta.validation.constraints.DecimalMin;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import java.time.LocalDate;
@@ -26,7 +25,6 @@ public class Caixa {
     private String descricao;
     
     @NotNull(message = "Valor é obrigatório.")
-    @DecimalMin(value = "0.01", message = "O valor deve ser maior que zero.")
     private Double valor;
     
     @NotNull(message = "Data é obrigatória.")
@@ -111,6 +109,7 @@ public class Caixa {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy"); 
         return data != null ? data.format(formatter) : ""; 
     }
+    
     public enum TipoLancamento {
         ENTRADA,
         SAIDA

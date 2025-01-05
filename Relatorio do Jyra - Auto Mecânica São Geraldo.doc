@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jira</title>
+    <meta http-equiv="Content-Type" Content="application/vnd.ms-word; charset=UTF-8">
+        <style type="text/css">
+
+.tableBorder, .grid
+{
+    background-color: #fff;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tableBorder td, .grid td
+{
+    vertical-align: top;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+.noPadding
+{
+    padding: 0 !important;
+}
+
+h3 .subText
+{
+    font-size: 60%;
+    font-weight: normal;
+}
+
+.tabLabel
+{
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-bottom:none;
+    padding: 2px;
+    display: inline;
+}
+
+td.blank
+{
+    padding: 0;
+    margin: 0;
+}
+
+.blank td
+{
+    border: none;
+}
+
+#descriptionArea
+{
+    margin: 0;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+hr
+{
+    border-top:1px solid #aaa;
+}
+
+hr.fullcontent
+{
+  height: 15px;
+  padding: 10px 0;
+  background: #fff url('https://patriciachiaradia.atlassian.net/images/icons/hr.gif') no-repeat scroll center;
+}
+
+</style>
+
+</head>
+<body>
+
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [AUT-4]&nbsp;<a href="https://patriciachiaradia.atlassian.net/browse/AUT-4">Registros financeiros (RF04)</a>
+            <span class="subText">
+               Criado: 05/jan/25                   &nbsp;Atualizado(a): 05/jan/25
+
+                                                    &nbsp;Resolvido: 05/jan/25
+                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Concluído</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Projeto:</b></td>
+        <td width="80%"><a href="https://patriciachiaradia.atlassian.net/secure/BrowseProject.jspa?id=10069">AutoMecanicaSaoGeraldo</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Componentes:</b></td>
+            <td>
+                            Nenhum
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Versões afetadas:</b></td>
+            <td>
+                            Nenhum
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Versões corrigidas:</b></td>
+            <td>
+                            Nenhum
+                </td>
+    </tr>
+    
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Tipo:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Bug
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Prioridade:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Relator:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:ceceba7e-f20e-4e5f-8b4e-f15e91914097"
+                id="word_reporter_712020:ceceba7e-f20e-4e5f-8b4e-f15e91914097"
+                href="https://patriciachiaradia.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3Aceceba7e-f20e-4e5f-8b4e-f15e91914097">
+                    Patricia Chiaradia
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Responsável:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:ceceba7e-f20e-4e5f-8b4e-f15e91914097"
+                id="word_assignee_712020:ceceba7e-f20e-4e5f-8b4e-f15e91914097"
+                href="https://patriciachiaradia.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3Aceceba7e-f20e-4e5f-8b4e-f15e91914097">
+                    Patricia Chiaradia
+                </a>
+
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolução:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                            Itens concluídos
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votos:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Categorias:</b>
+        </td>
+        <td id="labels-10038-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            Nenhum
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Estimativa de trabalho restante:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Desconhecido
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Tempo gasto:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Desconhecido
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Estimativa original:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Desconhecido
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+    
+
+
+
+</table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Descrição</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p><b>ID: 004</b></p>
+
+<p><b>Descrição:</b> Registros financeiros (RF04)</p>
+
+<p><b>Pré-Condições de execução:</b></p>
+
+<p>·         O sistema deve estar conectado ao banco de dados.</p>
+
+<p>·         Serviços realizados ou despesas devem ser cadastrados.</p>
+
+<p><b>Valores de Entrada:</b></p>
+
+<p>·         Tipo de operação (entrada ou saída), descrição, valor.</p>
+
+<p><b>Etapas do teste:</b></p>
+
+<div class='table-wrap'>
+<table class='confluenceTable'><tbody>
+<tr>
+<td class='confluenceTd'><b>Etapa</b></td>
+<td class='confluenceTd'><b>Descrição</b></td>
+<td class='confluenceTd'><b>Resultado Esperado</b></td>
+</tr>
+<tr>
+<td class='confluenceTd'>1</td>
+<td class='confluenceTd'>Na principal, clicar no botão “Livro Caixa”</td>
+<td class='confluenceTd'>A tela de registro de livro caixa é exibida.</td>
+</tr>
+<tr>
+<td class='confluenceTd'>2</td>
+<td class='confluenceTd'>Inserir dados (data, descrição e valor)</td>
+<td class='confluenceTd'>O sistema valida os dados inseridos.</td>
+</tr>
+<tr>
+<td class='confluenceTd'>3</td>
+<td class='confluenceTd'>Seleciona Entrada ou Saída</td>
+<td class='confluenceTd'>O sistema valida a informação</td>
+</tr>
+<tr>
+<td class='confluenceTd'>4</td>
+<td class='confluenceTd'>Clicar no botão “Registrar”</td>
+<td class='confluenceTd'>Mensagem “Registro salvo com sucesso” é exibida.</td>
+</tr>
+<tr>
+<td class='confluenceTd'>5</td>
+<td class='confluenceTd'>Fechar mensagem de Sucesso</td>
+<td class='confluenceTd'>O sistema preenche a tabela abaixo do campo de cadastro com os registros existentes no banco de dados.</td>
+</tr>
+</tbody></table>
+</div>
+
+
+<p><b>Resultados Esperados:</b></p>
+
+<p>·         Registro da operação financeira salvo corretamente no banco de dados.</p>
+
+<p>·         Exibição de mensagens de erro quando os dados são inválidos.</p>
+
+<p>·         Preenchimento da tabela com os dados cadastrados.</p>
+
+<p><b>Pós-condições de execução:</b></p>
+
+<p>·         Registro de entrada ou saída disponível para consulta e cálculo de saldo no livro caixa.</p>
+
+<p> </p>
+
+<p><b>Estado: APROVADO</b></p>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [AUT-3]&nbsp;<a href="https://patriciachiaradia.atlassian.net/browse/AUT-3">Criação de Ordem de Serviço (RF04)</a>
+            <span class="subText">
+               Criado: 05/jan/25                   &nbsp;Atualizado(a): 05/jan/25
+
+                                                    &nbsp;Resolvido: 05/jan/25
+                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Concluído</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Projeto:</b></td>
+        <td width="80%"><a href="https://patriciachiaradia.atlassian.net/secure/BrowseProject.jspa?id=10069">AutoMecanicaSaoGeraldo</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Componentes:</b></td>
+            <td>
+                            Nenhum
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Versões afetadas:</b></td>
+            <td>
+                            Nenhum
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Versões corrigidas:</b></td>
+            <td>
+                            Nenhum
+                </td>
+    </tr>
+    
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Tipo:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Bug
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Prioridade:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Relator:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:ceceba7e-f20e-4e5f-8b4e-f15e91914097"
+                id="word_reporter_712020:ceceba7e-f20e-4e5f-8b4e-f15e91914097"
+                href="https://patriciachiaradia.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3Aceceba7e-f20e-4e5f-8b4e-f15e91914097">
+                    Patricia Chiaradia
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Responsável:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:ceceba7e-f20e-4e5f-8b4e-f15e91914097"
+                id="word_assignee_712020:ceceba7e-f20e-4e5f-8b4e-f15e91914097"
+                href="https://patriciachiaradia.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3Aceceba7e-f20e-4e5f-8b4e-f15e91914097">
+                    Patricia Chiaradia
+                </a>
+
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolução:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                            Itens concluídos
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votos:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Categorias:</b>
+        </td>
+        <td id="labels-10037-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            Nenhum
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Estimativa de trabalho restante:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Desconhecido
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Tempo gasto:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Desconhecido
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Estimativa original:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Desconhecido
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+    
+
+
+
+</table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Descrição</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p><b>ID: 003</b></p>
+
+<p><b>Descrição:</b> Criação de Ordem de Serviço (RF04)</p>
+
+<p><b>Pré-Condições de execução:</b></p>
+
+<p>·         Preencher todos os campos de cadastro;</p>
+
+<p>·         Clientes previamente cadastrados para associar a um registro de serviço;</p>
+
+<p>·         Clicar no botão cadastrar.</p>
+
+<p><b>Valores de Entrada:</b></p>
+
+<p>·         Informar os dados obrigatórios solicitados</p>
+
+<p>·         Selecionar um cliente para associar a um registro de serviço;</p>
+
+<p><b>Etapas do teste:</b></p>
+
+<div class='table-wrap'>
+<table class='confluenceTable'><tbody>
+<tr>
+<td class='confluenceTd'><b>Etapa</b></td>
+<td class='confluenceTd'><b>Descrição</b></td>
+<td class='confluenceTd'><b>Resultado Esperado</b></td>
+</tr>
+<tr>
+<td class='confluenceTd'>1</td>
+<td class='confluenceTd'>Na principal, clicar no botão “Ordem de Serviço”</td>
+<td class='confluenceTd'>A tela de Ordem de Serviços é exibida.</td>
+</tr>
+<tr>
+<td class='confluenceTd'>2</td>
+<td class='confluenceTd'>Preencher os dados solicitados e selecionar um cliente para associar a uma ordem de serviço</td>
+<td class='confluenceTd'>Os dados são preenchidos corretamente.</td>
+</tr>
+<tr>
+<td class='confluenceTd'>3</td>
+<td class='confluenceTd'>Clicar no botão “Registrar”</td>
+<td class='confluenceTd'>Mensagem “Ordem de Serviço criada com sucesso.” é exibida.</td>
+</tr>
+<tr>
+<td class='confluenceTd'>4</td>
+<td class='confluenceTd'>Fechar mensagem de Sucesso</td>
+<td class='confluenceTd'>O sistema preenche a tabela abaixo do campo de cadastro com os registros existentes no banco de dados.</td>
+</tr>
+</tbody></table>
+</div>
+
+
+<p><b>Resultados Esperados:</b></p>
+
+<p>·         Uma ordem de serviço é associada a um cliente.</p>
+
+<p>·         A mensagem de sucesso é exibida.</p>
+
+<p>·         Preenchimento da tabela com os dados cadastrados.</p>
+
+<p><b>Pós-condições de execução:</b></p>
+
+<p>·         A ordem de serviço pode ser consultada e vinculada ao cliente correspondente.</p>
+
+<p><b>Estado: APROVADO</b></p>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [AUT-2]&nbsp;<a href="https://patriciachiaradia.atlassian.net/browse/AUT-2">Visualização dos clientes cadastrados no sistema (RF02)</a>
+            <span class="subText">
+               Criado: 05/jan/25                   &nbsp;Atualizado(a): 05/jan/25
+
+                                                    &nbsp;Resolvido: 05/jan/25
+                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Concluído</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Projeto:</b></td>
+        <td width="80%"><a href="https://patriciachiaradia.atlassian.net/secure/BrowseProject.jspa?id=10069">AutoMecanicaSaoGeraldo</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Componentes:</b></td>
+            <td>
+                            Nenhum
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Versões afetadas:</b></td>
+            <td>
+                            Nenhum
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Versões corrigidas:</b></td>
+            <td>
+                            Nenhum
+                </td>
+    </tr>
+    
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Tipo:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Bug
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Prioridade:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                High
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Relator:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:ceceba7e-f20e-4e5f-8b4e-f15e91914097"
+                id="word_reporter_712020:ceceba7e-f20e-4e5f-8b4e-f15e91914097"
+                href="https://patriciachiaradia.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3Aceceba7e-f20e-4e5f-8b4e-f15e91914097">
+                    Patricia Chiaradia
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Responsável:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:ceceba7e-f20e-4e5f-8b4e-f15e91914097"
+                id="word_assignee_712020:ceceba7e-f20e-4e5f-8b4e-f15e91914097"
+                href="https://patriciachiaradia.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3Aceceba7e-f20e-4e5f-8b4e-f15e91914097">
+                    Patricia Chiaradia
+                </a>
+
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolução:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                            Itens concluídos
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votos:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Categorias:</b>
+        </td>
+        <td id="labels-10036-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            Nenhum
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Estimativa de trabalho restante:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Desconhecido
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Tempo gasto:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Desconhecido
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Estimativa original:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Desconhecido
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+    
+
+
+
+</table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Descrição</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p><b>Pré-Condições de execução:</b></p>
+
+<p>·         O sistema deve estar conectado ao banco de dados, com registros de clientes cadastrados;</p>
+
+<p>·         O botão <b>"Exibir Cadastros"</b> deve estar disponível na página principal;</p>
+
+<p><b>Valores de Entrada:</b></p>
+
+<p>·         Dados dos clientes cadastrados anteriormente no sistema;</p>
+
+<p><b>Etapas do teste:</b></p>
+
+<div class='table-wrap'>
+<table class='confluenceTable'><tbody>
+<tr>
+<td class='confluenceTd'><b>Etapa</b></td>
+<td class='confluenceTd'><b>Descrição</b></td>
+<td class='confluenceTd'><b>Resultado Esperado</b></td>
+</tr>
+<tr>
+<td class='confluenceTd'>1</td>
+<td class='confluenceTd'>Na página principal, clicar no botão “Exibir Cadastros”</td>
+<td class='confluenceTd'>A tela de visualização é exibida.</td>
+</tr>
+<tr>
+<td class='confluenceTd'>2</td>
+<td class='confluenceTd'>Exibir dados cadastrados</td>
+<td class='confluenceTd'>O sistema preenche a tabela com os registros existentes no banco de dados.</td>
+</tr>
+</tbody></table>
+</div>
+
+
+<p> </p>
+
+<p><b>Resultados Esperados:</b></p>
+
+<p>·         Exibição correta da tabela preenchida com todos os registros de clientes cadastrados;</p>
+
+<p><b>Pós-condições de execução:</b></p>
+
+<p>·         A lista de clientes cadastrados é exibida na tela corretamente.</p>
+
+<p><b>Estado: APROVADO</b></p>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [AUT-1]&nbsp;<a href="https://patriciachiaradia.atlassian.net/browse/AUT-1">Cadastro de Clientes (RF01)</a>
+            <span class="subText">
+               Criado: 05/jan/25                   &nbsp;Atualizado(a): 05/jan/25
+
+                                                    &nbsp;Resolvido: 05/jan/25
+                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Concluído</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Projeto:</b></td>
+        <td width="80%"><a href="https://patriciachiaradia.atlassian.net/secure/BrowseProject.jspa?id=10069">AutoMecanicaSaoGeraldo</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Componentes:</b></td>
+            <td>
+                            Nenhum
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Versões afetadas:</b></td>
+            <td>
+                            Nenhum
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Versões corrigidas:</b></td>
+            <td>
+                            Nenhum
+                </td>
+    </tr>
+    
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Tipo:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Bug
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Prioridade:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                High
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Relator:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:ceceba7e-f20e-4e5f-8b4e-f15e91914097"
+                id="word_reporter_712020:ceceba7e-f20e-4e5f-8b4e-f15e91914097"
+                href="https://patriciachiaradia.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3Aceceba7e-f20e-4e5f-8b4e-f15e91914097">
+                    Patricia Chiaradia
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Responsável:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:ceceba7e-f20e-4e5f-8b4e-f15e91914097"
+                id="word_assignee_712020:ceceba7e-f20e-4e5f-8b4e-f15e91914097"
+                href="https://patriciachiaradia.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3Aceceba7e-f20e-4e5f-8b4e-f15e91914097">
+                    Patricia Chiaradia
+                </a>
+
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolução:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                            Itens concluídos
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votos:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Categorias:</b>
+        </td>
+        <td id="labels-10035-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            Nenhum
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Estimativa de trabalho restante:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Desconhecido
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Tempo gasto:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Desconhecido
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Estimativa original:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Desconhecido
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+    
+
+
+
+</table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Descrição</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p><b>Pré-Condições de execução:</b></p>
+
+<p>·         Preencher todos os campos de cadastro;</p>
+
+<p>·         Clicar no botão cadastrar.</p>
+
+<p><b>Valores de Entrada:</b></p>
+
+<p>·         Informar os dados obrigatórios solicitados:</p>
+
+<p>           <b>Cliente:</b> Nome, CPF, telefone.</p>
+
+<p>            <b>Dados do Veículo:</b> Modelo e placa</p>
+
+<p><b>Etapas do teste:</b></p>
+
+<div class='table-wrap'>
+<table class='confluenceTable'><tbody>
+<tr>
+<td class='confluenceTd'><b>Etapa</b></td>
+<td class='confluenceTd'><b>Descrição</b></td>
+<td class='confluenceTd'><b>Resultado Esperado</b></td>
+</tr>
+<tr>
+<td class='confluenceTd'>1</td>
+<td class='confluenceTd'>Na página principal, clicar no botão “Cadastro”</td>
+<td class='confluenceTd'>Tela de cadastro é exibida.</td>
+</tr>
+<tr>
+<td class='confluenceTd'>2</td>
+<td class='confluenceTd'>Inserir os dados de cliente</td>
+<td class='confluenceTd'>Os dados são preenchidos corretamente.</td>
+</tr>
+<tr>
+<td class='confluenceTd'>3</td>
+<td class='confluenceTd'>Clicar no botão “Cadastrar”</td>
+<td class='confluenceTd'>Mensagem de “Cadastro realizado com sucesso” é exibido.</td>
+</tr>
+</tbody></table>
+</div>
+
+
+<p> </p>
+
+<p><b>Resultados Esperados:</b></p>
+
+<p>·         O sistema cadastra corretamente o cliente no banco de dados.</p>
+
+<p>·         Exibição de mensagens de validação amigáveis caso o usuário não preencha os dados obrigatórios ou insira informações inválidas (ex.: CPF mal formatado).</p>
+
+<p><b>Pós-condições de execução:</b></p>
+
+<p>·         Cliente cadastrado com sucesso, disponível para consulta no sistema.</p>
+
+<p><b>Estado: APROVADO</b></p>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />Gerado em Sun Jan 05 22:54:03 GMT 2025 por Patricia Chiaradia usando JIRA 1001.0.0-SNAPSHOT#100277-rev:04504326a3bb85891591d523cc28ed61aefaa46b.
+
+</body>
+</html>
